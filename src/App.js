@@ -20,9 +20,7 @@ class App extends Component {
       alert ('Duplicate clicked!')
     } else {//GAME CONTINUES
         this.state.clickedCards.push(id);
-        this.setState ({
-          score: this.state.score++
-        });
+        this.state.score++;
       if (this.state.score > this.state.highscore) {//REWRITING HIGHSCORE
         this.setState({ 
           highscore: this.state.score,
